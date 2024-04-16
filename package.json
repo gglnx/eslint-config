@@ -1,0 +1,32 @@
+{
+  "name": "@gglnx/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared ESLint configuration",
+  "main": "index.cjs",
+  "author": "Dennis Morhardt <info@dennismorhardt.de",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gglnx/eslint-config.git"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.6",
+    "@typescript-eslint/parser": "^7.6",
+    "eslint": "^8.57",
+    "eslint-config-airbnb-base": "^15.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.6",
+    "@typescript-eslint/parser": "^7.6",
+    "eclint": "^2.8.1",
+    "eslint": "^8.57",
+    "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "scripts": {
+    "prelint": "eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git')",
+    "lint": "eslint --report-unused-disable-directives ."
+  },
+  "files": [
+    "index.cjs"
+  ]
+}

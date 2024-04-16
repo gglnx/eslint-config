@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gglnx/eslint-config.git"
+    "url": "git+https://github.com/gglnx/eslint-config.git"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.6",

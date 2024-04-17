@@ -28,7 +28,7 @@ Create an `.eslintrc` file in your project root:
 * `max-len`: Allowing up to 120 chars in a line
 * `lines-between-class-members`: Don't require an empty line between single line class members
 * `no-param-reassign`: Allowing parameters starting with `$` to be reassigned (use this only referenced parameters like DOM elements)
-* `import/extensions`: Don't require file extensions for importing of JavaScript files
+* `import/extensions`: Forbid file extensions for importing of JavaScript files in Typescript files
 * `import/no-extraneous-dependencies`: Don't report `devDependencies` in config files (`*.config.js`)
 * `no-restricted-syntax`: Allows the usages of `for of` loops
 * `class-methods-use-this`: Remove requirement for using a `this` in class methods

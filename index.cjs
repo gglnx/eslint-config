@@ -28,12 +28,6 @@ module.exports = {
       },
     ],
     'class-methods-use-this': ['off'],
-    'import/extensions': ['error', 'ignorePackages', {
-      js: 'never',
-      mjs: 'never',
-      cjs: 'never',
-      ts: 'never',
-    }],
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
         '**/__tests__/**',
@@ -62,6 +56,14 @@ module.exports = {
       plugins: [
         '@typescript-eslint',
       ],
+      rules: {
+        'import/extensions': ['error', 'ignorePackages', {
+          js: 'never',
+          mjs: 'never',
+          cjs: 'never',
+          ts: 'never',
+        }],
+      },
     },
   ],
   ignorePatterns: [

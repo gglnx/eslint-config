@@ -1,6 +1,6 @@
 {
   "name": "@gglnx/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared ESLint configuration",
   "main": "index.cjs",
   "author": "Dennis Morhardt <info@dennismorhardt.de",
@@ -9,6 +9,10 @@
     "type": "git",
     "url": "git+https://github.com/gglnx/eslint-config.git"
   },
+  "bugs": {
+    "url": "https://github.com/gglnx/eslint-config/issues"
+  },
+  "homepage": "https://github.com/gglnx/eslint-config#readme",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.6",
     "@typescript-eslint/parser": "^7.6",

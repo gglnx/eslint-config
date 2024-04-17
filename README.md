@@ -7,7 +7,7 @@ This is my personal ESLint shared configuration. It's based on the [`eslint-conf
 Install the configuration and all peer dependencies:
 
 ```bash
-npx install-peerdeps --dev @gglnx/eslint-config
+npm install --save-dev @gglnx/eslint-config
 ```
 
 ## Usage

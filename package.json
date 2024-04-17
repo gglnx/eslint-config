@@ -1,6 +1,6 @@
 {
   "name": "@gglnx/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared ESLint configuration",
   "main": "index.cjs",
   "author": "Dennis Morhardt <info@dennismorhardt.de",

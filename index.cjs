@@ -32,8 +32,8 @@ module.exports = {
       devDependencies: [
         '**/__tests__/**',
         '**/__mocks__/**',
-        '**/*.config.{js,mjs,cjs}',
-        '**/*.config.*.{js,mjs,cjs}',
+        '**/*.config.{js,mjs,cjs,ts}',
+        '**/*.config.*.{js,mjs,cjs,ts}',
       ],
       optionalDependencies: false,
     }],

@@ -1,41 +1,40 @@
 # @gglnx/eslint-config
 
-This is my personal ESLint shared configuration. It's based on the [`eslint-config-airbnb-base`](https://www.npmjs.com/package/eslint-config-airbnb-base) and [`@typescript-eslint/recommended`](https://typescript-eslint.io/users/configs) rules.
+This is my personal, opinionated ESLint configuration for JavaScript and TypeScript.
 
 ## Installation
 
-Install the configuration and all peer dependencies:
+Install the configuration:
 
 ```bash
-npm install --save-dev @gglnx/eslint-config
+npm install --save-dev @gglnx/eslint-config@beta
 ```
+
+ESLint and all plugins will be automatically installed as this config defines them as peer dependencies.
 
 ## Usage
 
-Create an `.eslintrc` file in your project root:
+Create an `eslint.config.mjs` file in your project root:
 
-```json
-{
-  "root": true,
-  "extends": [
-    "@gglnx/eslint-config"
-  ]
-}
+```js
+import { defineConfig, globalIgnores } from 'eslint/config';
+import eslintConfig from '@gglnx/eslint-config';
+
+export default defineConfig([
+  globalIgnores([
+    '**/node_modules/**',
+  ]),
+  ...eslintConfig,
+]);
 ```
 
-## Deviations
+## Rules
 
-* `max-len`: Allowing up to 120 chars in a line
-* `lines-between-class-members`: Don't require an empty line between single line class members
-* `no-param-reassign`: Allowing parameters starting with `$` to be reassigned (use this only referenced parameters like DOM elements)
-* `import/extensions`: Forbid file extensions for importing of JavaScript files in Typescript files
-* `import/no-extraneous-dependencies`: Don't report `devDependencies` in config files (`*.config.js`)
-* `no-restricted-syntax`: Allows the usages of `for of` loops
-* `class-methods-use-this`: Remove requirement for using a `this` in class methods
+tbd.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+As this my personal configuration pull requests are for bug-fixes only open. If you like would to add, change or remove rules please open an issue first to discuss your submission.
 
 ## License
 
